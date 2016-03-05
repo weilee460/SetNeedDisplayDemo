@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestViewInit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uhd-5G-gYJ">
+                                <rect key="frame" x="180" y="28" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="nsP-qq-IHg"/>
+                                    <constraint firstAttribute="width" secondItem="Uhd-5G-gYJ" secondAttribute="height" multiplier="15:8" id="oIV-d3-tcT"/>
+                                    <constraint firstAttribute="width" constant="240" id="yES-pC-hHx"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B99-I9-Zwg">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vlR-mG-i2C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cjp-JU-iuI">
+                                <rect key="frame" x="276" y="366" width="48" height="30"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="onClickSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E1J-29-Loh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B99-I9-Zwg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0LK-OI-Nt7"/>
+                            <constraint firstItem="B99-I9-Zwg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7AA-W0-bQ5"/>
+                            <constraint firstItem="Uhd-5G-gYJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="OJn-C7-OHB"/>
+                            <constraint firstItem="Uhd-5G-gYJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TCQ-vK-OpW"/>
+                            <constraint firstItem="Cjp-JU-iuI" firstAttribute="centerX" secondItem="B99-I9-Zwg" secondAttribute="centerX" id="Y1d-LW-5NL"/>
+                            <constraint firstItem="B99-I9-Zwg" firstAttribute="top" secondItem="Uhd-5G-gYJ" secondAttribute="bottom" constant="129" id="dfJ-IA-Wb5"/>
+                            <constraint firstItem="Cjp-JU-iuI" firstAttribute="top" secondItem="B99-I9-Zwg" secondAttribute="bottom" constant="51" id="s02-9W-1l2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="testInitView" destination="Uhd-5G-gYJ" id="Xs5-Uq-jKN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="220" y="357"/>
+        </scene>
+    </scenes>
+</document>
